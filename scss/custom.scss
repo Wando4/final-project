@@ -1,8 +1,60 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Lato:wght@400;700&display=swap');
+
+$font-family-sans-serif: 'Lato', sans-serif;
+$headings-font-family: 'EB Garamond', serif;
+
+// $headings-margin-bottom:      $spacer * .5;
+// $headings-font-style:         null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              inherit;  
+
+// Then add additional custom code here
+
+
 // Include any default variable overrides here (though functions won't be available)
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
+#hero {
+    background-image: url("../images/mini-golf-yellow-ball-with-a-bat.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero .d-flex {
+    height: 70vh;
+}
+
+#hero-1 {
+    background-image: url("../images/green-field-and-golf-ball.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero-1 .d-flex {
+    height: 40vh;
+}
+
+#map {
+    background-image: url("../images/map.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero-2 {
+    background-image: url("../images/white-golf-ball.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero-2 .d-flex {
+    height: 40vh;
+}
