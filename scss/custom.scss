@@ -20,7 +20,8 @@ $headings-color:              inherit;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 #hero {
-    background-image: url("../images/mini-golf-yellow-ball-with-a-bat-1.jpg");
+    background: url("../images/mini-golf-yellow-ball-with-a-bat-1.jpg") rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,14 +43,15 @@ $headings-color:              inherit;
 }
 
 #map {
-    background-image: url("../images/map.jpg");
+    background: url("../images/map.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #hero-2 {
-    background-image: url("../images/white-golf-ball.jpg");
+    background: url("../images/white-golf-ball.jpg") rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,6 +80,12 @@ $headings-color:              inherit;
     object-fit: cover;
 }
 
+.card-body,
+.card-title,
+.card-subtitle {
+    font-family: $font-family-sans-serif;
+}
+
 @media (max-width:767px) {
     .intro-image {
         grid-template-columns: repeat(1,1fr);
@@ -86,5 +94,6 @@ $headings-color:              inherit;
     .card-box .row,
     #info .row {
         flex-direction: column;
+        align-content: center;
     }
 }
