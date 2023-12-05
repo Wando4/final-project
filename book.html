@@ -10,36 +10,39 @@
     <link rel="icon" type="image/x-icon" href="images/hiddenv-favicon_io/favicon.ico">
 </head>
 <body>
-    
-     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid py-2 mx-5">
-          <a class="hidden-valley-brand" href="#">
-            <img src="images/white-and-black-logo.jpg" alt="Hiddenvalley" width="120" height="50">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link pe-auto hover" href="http://127.0.0.1:5501/index.html">MINI GOLF</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-auto hover" href="http://127.0.0.1:5501/contact.html#">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">BOOK NOW</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
 
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid py-2 mx-5">
+              <a class="hidden-valley-brand" href="#">
+                <img src="images/white-and-black-logo.png" alt="Hiddenvalley" width="120" height="50">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link pe-auto hover" href="http://127.0.0.1:5501/index.html">MINI GOLF</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pe-auto hover" href="http://127.0.0.1:5501/contact.html#">CONTACT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">BOOK NOW</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
     <section id="hero-2">
         <div class="container-fluid py-5">
             <!-- <img src="images/white-golf-ball.jpg" class="img-fluid" alt="golf ball near hole"> -->
             <div class="d-flex align-items-center">
                 <div class="container py-5 text-center text-white">
-                    <h1 class="display-3">Book Online</h1>
+                    <h1 class="display-1">Book Online</h1>
                 </div>
             </div>
         </div>
@@ -51,44 +54,52 @@
                 <h2>Reserve a Tee Time</h2>
             </div>
 
-            <form class="px-4 py-2">
+            <form class="px-4 py-2 w-100">
                 <div class="d-flex py-2 gap-2">
-                    <div class="mb-3 col-sm-4">
+                    <div class="mb-3 col">
                         <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                        <input type="name" class="form-control" id="exampleFormControlInput1">
                     </div>
-                    <div class="mb-3 col-sm-4">
+                    <div class="mb-3 col">
                         <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+                        <input type="number" class="form-control" id="exampleFormControlInput1">
                     </div>
-                    <div class="mb-3 col-sm-4">
+                    <div class="mb-3 col">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
                     </div>
                 </div>
                 <div class="d-flex py-2 gap-1">
-                    <div class="dropdown me-1 col-sm-4">
+                    <div class="dropdown me-1 col">
                         <label for="exampleFormControlInput1" class="form-label">Date</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Date">
+                        <input type="number" class="form-control" id="exampleFormControlInput1">
                     </div>
-                    <div class="dropdown me-1 col-sm-4">
+                    <div class="dropdown me-1 col">
                         <label for="exampleFormControlInput1" class="form-label">Time</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Time">
+                        <input type="number" class="form-control" id="exampleFormControlInput1">
                     </div>
-                    <div class="dropdown me-1 col-sm-2">
-                        <label for="exampleFormControlInput1" class="form-label">Adults</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Adults">
-                    </div>
-                    <div class="dropdown me-1 col-sm-2">
-                        <label for="exampleFormControlInput1" class="form-label">Children</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Children">
+                    <div class="col">
+                        <div class="row">
+                            <div class="dropdown me-1 col">
+                                <label for="exampleFormControlInput1" class="form-label">Adults</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="dropdown me-1 col">
+                                <label for="exampleFormControlInput1" class="form-label">Children</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="d-grid col-12 py-2 justify-content-md-end"> -->
-                <div class="d-grid col-sm-12 w-100 d-md-flex justify-content-md-end">
-                    <!-- <button type="button" class="btn btn-success btn-lg mb-3">BOOK</button> -->
-                    <button class="btn btn-success me-md-2" type="button">BOOK</button>
-                </div> 
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-success mb-3">CONTACT</button>
+                </div>
+                <!-- <button type="submit" class="btn btn-success">BOOK</button> -->
+                <!-- <div class="d-flex mb-3">
+                    <div class="me-auto p-2">
+                        <button type="submit" class="btn btn-success">BOOK</button>
+                    </div>
+                </div> -->
              </form>         
         </div>
     </section>
@@ -97,10 +108,10 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-sm-4">
-                <img src="images/white-and-black-logo.jpg" alt="hiddenvalley logo">
+                <img src="images/white-and-black-logo.png" alt="hiddenvalley logo">
                 </div>
                 <div class="col-sm-3 ps-2">
-                    <h6><b>Contact Information</b></h6>
+                    <p><b>Contact Information</b></p>
                     <ul class="list-unstyled">
                         <li class="list-item">1234 Estevan Sask</li>
                         <li class="list-item">S4A 2H8</li>
@@ -108,7 +119,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 ps-2">
-                    <h6><b>Hidden Valley Hours</b></h6>
+                    <p><b>Hidden Valley Hours</b></p>
                     <ul class="list-unstyled">
                         <li class="list-item">M: 8:00 am - 8:00 pm</li>
                         <li class="list-item">T: 8:00 am - 8:00 pm</li>
@@ -116,7 +127,7 @@
                     </ul>
                 </div>
                 <div class="col-sm-2">
-                    <h6><b>Follow Us</b></h6>
+                    <p><b>Follow Us</b></p>
                     <div class="row">
                         <div class="col-sm-6">
                             <img src="/images/instagram.jpg" class="img-fluid" alt="social media" width="40" height="40">
@@ -131,7 +142,7 @@
     </section>
 
     <footer>
-        <div class="p-3 mb-2 bg-dark text-white text-center">
+        <div class="p-3 bg-dark text-white text-center">
           <small>
             Copyright 2019
           </small>

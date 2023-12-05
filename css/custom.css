@@ -11858,7 +11858,7 @@ textarea.form-control-lg {
   }
 }
 #hero {
-  background-image: url("../images/mini-golf-yellow-ball-with-a-bat.jpg");
+  background-image: url("../images/mini-golf-yellow-ball-with-a-bat-1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11895,6 +11895,36 @@ textarea.form-control-lg {
 
 #hero-2 .d-flex {
   height: 40vh;
+}
+
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: #198754;
+  color: #198754;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.btn btn-success {
+  float: right;
+}
+
+.intro-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .intro-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .intro .row,
+  .card-box .row,
+  #info .row {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
